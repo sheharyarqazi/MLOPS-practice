@@ -19,7 +19,6 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies hheh
-        run: pip install -r pytest
-
+        run: make install
       - name: Execute tests
-        run: pytest test.py
+        run: make test
